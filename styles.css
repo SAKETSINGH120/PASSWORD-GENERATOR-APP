@@ -1,0 +1,194 @@
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: sans-serif;
+   }
+   
+   body {
+       width: 100%;
+       height: 100vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       /* background: rgb(2, 0, 36); */
+       background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(226, 0, 255, 1) 100%);
+   }
+   
+   .conatiner {
+       width: 90%;
+       max-width: 450px;
+   }
+   
+   h1 {
+       color: white;
+       opacity: 0.75;
+       font-size: 25px;
+       line-height: 3;
+       text-transform: uppercase;
+       margin: 10px;
+   }
+   
+   .display-container {
+       position: relative;
+       /* background: -webkit-linear-gradient(90deg, rgba(244, 0, 255, 1) 0%, rgba(255, 0, 0, 1) 100%); */
+       background: rgb(40, 31, 206);
+       background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(226, 0, 255, 1) 100%);
+       margin: 10px;
+       border-radius: 10px;
+   }
+   
+   .display {
+       width: 100%;
+       background-color: transparent;
+       padding: 1rem 1rem;
+       color: yellow;
+       font-weight: 700;
+       line-height: 8px;
+       font-size: large;
+       letter-spacing: 1px;
+       border: none;
+       border-radius: 10px;
+       border-bottom: .3rem solid rgb(8, 219, 222);
+   }
+   
+   .display::placeholder {
+       position: absolute;
+       text-transform: uppercase;
+       color: pink;
+       font-size: 15px;
+   }
+   
+   .display-container button {
+       position: absolute;
+       top: 11px;
+       right: 10px;
+   }
+   
+   .copytext {
+       position: absolute;
+       background-color: yellow;
+       opacity: 0;
+       transform: scale(0);
+       padding: 2px;
+       left: -25px;
+       top: -35px;
+       border-radius: 5px;
+       transform-origin: bottom;
+       transition: all 200ms ease-in-out;
+   }
+   
+   .copytext.active {
+       opacity: 1;
+       transform: scale(1);
+   }
+   
+   .check input {
+       cursor: pointer;
+   }
+   
+   .input-container {
+       /* background-color: rgb(41, 163, 177); */
+       /* background: -webkit-linear-gradient(90deg, rgba(244, 0, 255, 1) 0%, rgba(255, 0, 0, 1) 100%); */
+       background: rgb(2, 0, 36);
+       background: -webkit-linear-gradient(90deg, rgba(229, 43, 43, 1) 0%, rgba(48, 7, 106, 1) 83%);
+       padding: 20px;
+       border-radius: 10px;
+       margin: 10px;
+       border-bottom: .3rem solid rgb(18, 22, 22);
+   }
+   
+   .length-container {
+       display: flex;
+       color: white;
+       font-weight: 400;
+       align-items: center;
+       justify-content: space-between;
+       letter-spacing: 1px;
+   }
+   
+   #Second {
+       color: yellow;
+       font-weight: 700;
+       font-size: larger;
+   }
+   
+   .strength-container {
+       display: flex;
+       color: white;
+       align-items: center;
+       justify-content: space-between;
+   }
+   
+   #str {
+       position: relative;
+       margin-top: 10px;
+       margin-bottom: 10px;
+       left: 10px;
+       font-weight: 600;
+   }
+   
+   .slider {
+       position: relative;
+       display: flex;
+       width: 100%;
+       position: relative;
+       margin-bottom: 30px;
+       margin-top: 30px;
+       appearance: none;
+       height: 10px;
+       cursor: pointer;
+       border-radius: 10px;
+       background: linear-gradient(90deg, rgba(2, 0, 6, 13) 0%, rgba(226, 0, 255, 1) 100%)
+   }
+   
+   .slider::-webkit-slider-thumb {
+       appearance: none;
+       width: 20px;
+       height: 20px;
+       border-radius: 50%;
+       background-color: violet;
+       cursor: pointer;
+   }
+   
+   .slider:focus {
+       outline: 1px solid violet;
+   }
+   
+   .slider::-webkit-slider-thumb:hover {
+       outline: 2px solid black;
+       background-color: violet;
+       box-shadow: 0px 0px 20px 5px;
+       transition: all 200ms ease-in;
+   }
+   
+   .check {
+       font-weight: bold;
+       margin: 10px;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   
+   .light {
+       width: 1.5rem;
+       height: 1.5rem;
+       border-radius: 50%;
+       box-shadow: 1px 1px 5px 2px;
+   }
+   
+   .generateButton {
+       color: black;
+       position: relative;
+       top: 15px;
+       margin-bottom: 15px;
+       /* margin: auto; */
+       padding: 10px;
+       border-radius: 10px;
+       width: 100%;
+       font-weight: 900;
+       letter-spacing: 1px;
+       border: none;
+       text-transform: uppercase;
+       border-bottom: 4px solid aqua;
+       background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(226, 0, 255, 1) 100%);
+   }
