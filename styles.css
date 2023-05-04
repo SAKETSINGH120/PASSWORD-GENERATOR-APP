@@ -65,6 +65,11 @@
        top: 11px;
        right: 10px;
    }
+
+
+.check{
+color:yellow;
+}
    
    .copytext {
        position: absolute;
@@ -183,6 +188,7 @@
        margin-bottom: 15px;
        /* margin: auto; */
        padding: 10px;
+     color:yellow;
        border-radius: 10px;
        width: 100%;
        font-weight: 900;
